@@ -18,7 +18,7 @@ export default function FeaturedProducts() {
   const sectionRef = useRevealOnScroll();
 
   return (
-    <section id="products" className="py-24 bg-light-gray relative" ref={sectionRef}>
+    <section id="products" className="py-16 sm:py-24 bg-light-gray relative" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <span className="inline-block text-sm font-semibold text-gold uppercase tracking-widest mb-3">
@@ -31,11 +31,11 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Product cards grid */}
-        <div className="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+        <div className="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6">
           {products.map((product, i) => (
             <div
               key={product.id}
-              className="group relative bg-white rounded-2xl p-4 border border-gray-100 hover:border-gold/30 hover:shadow-2xl hover:shadow-navy/10 transition-all duration-500 hover:-translate-y-3 overflow-hidden"
+              className="group relative bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-gray-100 hover:border-gold/30 hover:shadow-2xl hover:shadow-navy/10 transition-all duration-500 hover:-translate-y-3 overflow-hidden"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Grade badge */}
@@ -79,7 +79,7 @@ export default function FeaturedProducts() {
 
         {/* Login prompt */}
         <div className="reveal text-center mt-16">
-          <div className="inline-flex items-center gap-3 bg-white border border-gray-100 rounded-2xl px-8 py-5 shadow-sm">
+          <div className="inline-flex items-center gap-3 bg-white border border-gray-100 rounded-2xl px-5 sm:px-8 py-4 sm:py-5 shadow-sm">
             <Lock className="w-5 h-5 text-navy/40" />
             <p className="text-gray-500 text-sm">
               Full catalog available upon{" "}

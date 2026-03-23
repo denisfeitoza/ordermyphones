@@ -1,8 +1,6 @@
 "use client";
 
-import { buttonVariants } from "@/components/ui/button";
 import { ArrowRight, Handshake } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { useCountUp } from "@/hooks/useCountUp";
 
 function AnimatedStat({ end, suffix, label }: { end: number; suffix: string; label: string }) {

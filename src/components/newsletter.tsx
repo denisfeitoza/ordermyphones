@@ -21,7 +21,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-navy via-navy-light to-navy relative overflow-hidden" ref={sectionRef}>
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-navy via-navy-light to-navy relative overflow-hidden" ref={sectionRef}>
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 opacity-5" style={{

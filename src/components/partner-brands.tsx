@@ -77,7 +77,7 @@ export default function PartnerBrands() {
   const sectionRef = useRevealOnScroll();
 
   return (
-    <section id="partner" className="py-24 bg-navy relative overflow-hidden" ref={sectionRef}>
+    <section id="partner" className="py-16 sm:py-24 bg-navy relative overflow-hidden" ref={sectionRef}>
       {/* Ambient glow */}
       <div className="absolute top-1/4 -left-32 w-64 h-64 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-gold/5 rounded-full blur-3xl" />
@@ -97,7 +97,7 @@ export default function PartnerBrands() {
               {partnerReasons.map((item, i) => (
                 <div
                   key={item.title}
-                  className="group relative flex gap-5 p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.08] hover:border-gold/30 transition-all duration-500 overflow-hidden"
+                  className="group relative flex flex-col sm:flex-row gap-4 sm:gap-5 p-5 sm:p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.08] hover:border-gold/30 transition-all duration-500 overflow-hidden"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
                   {/* Number background */}
@@ -134,11 +134,11 @@ export default function PartnerBrands() {
               on quality, innovation, and style for every need.
             </p>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4">
               {brands.map((brand, i) => (
                 <div
                   key={brand.name}
-                  className="group relative aspect-square rounded-2xl bg-white/[0.03] border border-white/[0.08] flex flex-col items-center justify-center gap-3 hover:bg-white/[0.08] hover:border-gold/30 transition-all duration-500 cursor-pointer overflow-hidden"
+                  className="group relative aspect-[4/5] sm:aspect-square rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/[0.08] flex flex-col items-center justify-center gap-2 sm:gap-3 hover:bg-white/[0.08] hover:border-gold/30 transition-all duration-500 cursor-pointer overflow-hidden"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   {/* Hover glow */}

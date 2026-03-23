@@ -18,7 +18,7 @@ export default function Clients() {
   const sectionRef = useRevealOnScroll();
 
   return (
-    <section id="clients" className="py-24 bg-white relative" ref={sectionRef}>
+    <section id="clients" className="py-16 sm:py-24 bg-white relative" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <span className="inline-block text-sm font-semibold text-gold uppercase tracking-widest mb-3">
@@ -31,9 +31,9 @@ export default function Clients() {
         </div>
 
         {/* Logo Marquee */}
-        <div className="reveal overflow-hidden mb-20 relative">
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+        <div className="reveal overflow-hidden mb-12 sm:mb-20 relative">
+          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
           <div className="flex animate-marquee hover:[animation-play-state:paused]">
             {[...clientLogos, ...clientLogos].map((logo, i) => (
               <div
@@ -61,7 +61,7 @@ export default function Clients() {
               }} />
             </div>
 
-            <div className="relative z-10 p-8 sm:p-16 text-center">
+            <div className="relative z-10 p-6 sm:p-16 text-center">
               {/* Stars */}
               <div className="flex justify-center gap-1 mb-8">
                 {[...Array(5)].map((_, i) => (
@@ -71,7 +71,7 @@ export default function Clients() {
 
               <Quote className="w-12 h-12 text-gold/20 mx-auto mb-8" strokeWidth={1} />
 
-              <blockquote className="text-xl sm:text-2xl lg:text-3xl text-white font-light leading-relaxed mb-10">
+              <blockquote className="text-lg sm:text-2xl lg:text-3xl text-white font-light leading-relaxed mb-8 sm:mb-10">
                 &ldquo;The ease of finding devices at good prices and the
                 uncomplicated sourcing process has been{" "}
                 <span className="text-gold font-medium">excellent</span> for our

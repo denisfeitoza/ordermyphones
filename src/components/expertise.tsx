@@ -33,7 +33,7 @@ export default function Expertise() {
   const glowRef = useMouseGlow();
 
   return (
-    <section id="expertise" className="py-24 bg-white relative" ref={sectionRef}>
+    <section id="expertise" className="py-16 sm:py-24 bg-white relative" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 reveal">
           <span className="inline-block text-sm font-semibold text-gold uppercase tracking-widest mb-3">
@@ -45,11 +45,11 @@ export default function Expertise() {
           <div className="w-16 h-1 bg-gradient-to-r from-gold to-gold-light mx-auto mt-4 rounded-full" />
         </div>
 
-        <div ref={glowRef} className="grid md:grid-cols-3 gap-8">
+        <div ref={glowRef} className="grid md:grid-cols-3 gap-6 sm:gap-8">
           {expertiseItems.map((item, i) => (
             <div
               key={item.title}
-              className="reveal group relative bg-white border border-gray-100 rounded-2xl p-8 text-center hover:border-transparent hover:shadow-2xl hover:shadow-navy/10 transition-all duration-500 hover:-translate-y-3 overflow-hidden"
+              className="reveal group relative bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 text-center hover:border-transparent hover:shadow-2xl hover:shadow-navy/10 transition-all duration-500 hover:-translate-y-3 overflow-hidden"
               style={{ transitionDelay: `${i * 150}ms` }}
             >
               {/* Mouse-follow glow */}
