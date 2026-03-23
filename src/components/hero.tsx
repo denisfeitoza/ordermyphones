@@ -23,7 +23,7 @@ export default function Hero() {
     >
       {/* Background with slow zoom */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-[slowZoom_20s_ease-in-out_infinite_alternate]"
+        className="absolute inset-0 bg-cover bg-[center_right_35%] sm:bg-center bg-no-repeat animate-[slowZoom_20s_ease-in-out_infinite_alternate]"
         style={{ backgroundImage: "url('/images/new-hero.png')" }}
       />
       {/* Multi-layer overlay */}
@@ -103,7 +103,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator - higher to not overlap wave */}
-      <div className="absolute bottom-28 sm:bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "1s" }}>
+      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: "1s" }}>
         <span className="text-xs text-white/40 uppercase tracking-widest">Scroll</span>
         <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
           <div className="w-1.5 h-1.5 bg-gold rounded-full animate-bounce" />
